@@ -21,8 +21,8 @@ const COMPARISONS = [
 export default function Home() {
   useSEO({
     title: 'GlobalTax — Free Tax Calculators for UK, USA, Canada, Australia & Germany 2025',
-    description: 'Free, accurate 2025 tax calculators for 5 countries. Calculate income tax, take-home pay, VAT, capital gains, and more. No signup required, instant results.',
-    canonical: 'https://taxnova.com/',
+    description: 'Wondering how much tax you actually pay? GlobalTax gives you instant, accurate 2025 tax estimates for 5 countries — no signup, no fees, just real numbers in seconds.',
+    canonical: 'https://global-tax-calc.vercel.app/',
   });
 
   const recentPosts = BLOG_POSTS.slice(0, 6);
@@ -36,10 +36,10 @@ export default function Home() {
       <section className="bg-white border-b border-[#e2e8f0] py-16">
         <div className="max-w-[1120px] mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-[#0f172a] mb-4 leading-tight" data-testid="hero-headline">
-            Free Tax Calculators for 5 Countries
+            See Exactly How Much Tax You Pay
           </h1>
           <p className="text-lg text-[#334155] mb-8 max-w-2xl mx-auto leading-relaxed">
-            Accurate 2025 tax estimates for the USA, UK, Canada, Australia, and Germany. Instant results, no signup required.
+            Free, instant tax calculators for the USA, UK, Canada, Australia, and Germany. Enter your salary and get a full 2025 breakdown in seconds — no account needed.
           </p>
           <div className="flex flex-wrap justify-center gap-3 mb-8">
             {COUNTRIES.map(c => (
@@ -95,13 +95,13 @@ export default function Home() {
       {/* Trust Points */}
       <section className="bg-[#f8fafc] border-y border-[#e2e8f0] py-12">
         <div className="max-w-[1120px] mx-auto px-4">
-          <h2 className="text-2xl font-bold text-[#0f172a] text-center mb-8">Why Use GlobalTax?</h2>
+          <h2 className="text-2xl font-bold text-[#0f172a] text-center mb-8">Why People Use GlobalTax</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { icon: '✓', title: 'Always Free', desc: 'No subscription, no hidden fees.' },
-              { icon: '✓', title: 'No Signup', desc: 'Use it instantly, no account needed.' },
-              { icon: '✓', title: 'Updated for 2025', desc: 'Rates reflect the latest tax year.' },
-              { icon: '✓', title: 'Formula-Accurate', desc: 'Uses official government tax formulas.' },
+              { icon: '✓', title: 'Always Free', desc: 'Every calculator, every country. No hidden charges, ever.' },
+              { icon: '✓', title: 'No Signup Needed', desc: 'Just open and use. No email, no account, no fuss.' },
+              { icon: '✓', title: 'Updated for 2025', desc: 'Rates are pulled directly from official government sources.' },
+              { icon: '✓', title: 'Genuinely Accurate', desc: 'Built on the same formulas tax authorities actually use.' },
             ].map(p => (
               <div key={p.title} className="text-center" data-testid={`trust-point-${p.title.toLowerCase().replace(/\s/g, '-')}`}>
                 <div className="w-10 h-10 rounded-full bg-[#dbeafe] text-[#1d4ed8] flex items-center justify-center font-bold text-lg mx-auto mb-3">
@@ -128,9 +128,9 @@ export default function Home() {
         <div className="max-w-[1120px] mx-auto px-4">
           <div className="bg-[#1d4ed8] rounded-2xl p-8 text-white text-center">
             <Globe className="w-10 h-10 mx-auto mb-4 opacity-80" />
-            <h2 className="text-2xl font-bold mb-2">Compare Taxes Across Countries</h2>
+            <h2 className="text-2xl font-bold mb-2">How Does Your Tax Compare Abroad?</h2>
             <p className="text-blue-100 mb-6 max-w-lg mx-auto">
-              Enter one salary and instantly compare your take-home pay in two countries side by side.
+              Type in your salary once and see your take-home pay in two countries side by side. Useful if you're thinking about relocating or just curious.
             </p>
             <div className="flex flex-wrap justify-center gap-3 mb-6">
               {COMPARISONS.map(c => (
